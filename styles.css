@@ -43,7 +43,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: black;
+    background: var(--color-black);
 }
 .person-content div h1 {
     color: transparent;
@@ -213,6 +213,53 @@ body{
 .stacks img{
     width: 30px;
     height: 30px;
+}
+
+#about{
+    height: 100vh;
+    width: 100%;
+    background: var( --color-black);
+
+    display: flex;
+    color: var(--color-white);
+}
+
+.background-about{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper{
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+}
+
+.img-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    background: 
+    linear-gradient(.25turn, transparent 30%, var( --color-black)),
+    linear-gradient(.95turn, transparent 30%, var( --color-black));
+}
+
+.img-wrapper img{
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+
 }
 
 @keyframes written_text {
