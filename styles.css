@@ -588,6 +588,25 @@ font-weight: bold;
     color: var(--color-purple);
 }
 
+#footer{
+    font-size: 10px;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    background: #191919;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-white)
+}
+
 
 @keyframes written_text {
     100%{
