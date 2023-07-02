@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
     <title>Portifólio - Victor Maciel</title>
 </head>
@@ -123,10 +124,10 @@
     <div class="projects-title">
         <h2>PROJETOS 🧩</h2>
     </div>
-
-    <div class="wrapper-projects">
-        <div class="card-project">
-            <div class="content-project">
+    <div class="container-projects">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide card-project">
                 <div class="image-project">
                     <a href="/">
                 <img src="aula-portfolio/dartvader.jpg" alt="img-darthvader">
@@ -145,12 +146,29 @@
                     </a>
                 </div>
             </div>
-        </div>
-        <div class="card-project">
-            <div class="content-project">
+            <div class="swiper-slide card-project">
                 <div class="image-project">
                     <a href="/">
-                <img src="aula-portfolio/dartvader2.jpg" alt="img-darthvader2">
+                <img src="aula-portfolio/dartvader2.jpg" alt="img-darthvader">
+                    </a>
+                </div>
+                <span>Em construção</span>
+                <p>Em breve terá um excelente projeto aqui.</p>
+                <div class="cta-project">
+                    <a href="/">
+                        Código
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="/">
+                        Site
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide card-project">
+                <div class="image-project">
+                    <a href="/">
+                <img src="aula-portfolio/dartvader3.jpg" alt="img-darthvader">
                     </a>
                 </div>
                 <span>Em construção</span>
@@ -167,28 +185,12 @@
                 </div>
             </div>
         </div>
-        <div class="card-project">
-            <div class="content-project">
-                <div class="image-project">
-                    <a href="/">
-                <img src="aula-portfolio/dartvader3.jpg" alt="img-darthvader3">
-                    </a>
-                </div>
-                <span>Em construção</span>
-                <p>Em breve terá um excelente projeto aqui.</p>
-                <div class="cta-project">
-                    <a href="/">
-                        Código
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="/">
-                        Site
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </div>
+    </div>
+
    </section>
    <!-- End Projects -->
 
@@ -226,6 +228,7 @@
     </div>
    </section>
    <!-- End Footer -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
    <script src="scripts.js"></script>
 </body>

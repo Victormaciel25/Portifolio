@@ -409,7 +409,7 @@ body{
     color: var(--color-white);
 }
 
-.wrapper-projects{
+/* .wrapper-projects{
     display: flex;
     margin-top: 2rem;
     
@@ -418,11 +418,32 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: row;
+} */
+
+.container-projects{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper{
+    height: 100%;
+    width: 100%;
+    max-width: 1020px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 450px;
+    margin-top: 2rem;
 }
 
 .card-project{
-    width: 320px;
-    height: 450px;
+    height: 100%;
+    width: 100%;
 
     padding: 30px 20px 20px;
     margin: 0px 10px;
@@ -430,9 +451,10 @@ body{
     background: var(--color-white);
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: initial;
 
     border-radius: 20px;
+    z-index: 1;
 }
 
 .card-project::after{
@@ -445,15 +467,16 @@ body{
     width: 100%;
     background: var(--color-purple);
     border-radius: 20px 20px 0px 0px;
+    z-index: -1;
 }
 
-.content-project{
+/* .content-project{
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     z-index: 1;
-}
+} */
 
 .image-project{
     height: 240px;
@@ -482,14 +505,14 @@ body{
     transform: scale(1.1);
 }
 
-.content-project span{
-    color: var(--color-black);
+.card-project span{
+    color: var(--color-white);
     font-weight: bold;
     font-size: 1.7rem;
-    margin: 0.75rem auto .5rem auto;
+    margin: 0.75rem auto 25rem auto;
 }
 
-.content-project p{
+.card-project p{
     color: #3d3d4b;
     font-weight: bold;
     font-size: 1.1rem;
