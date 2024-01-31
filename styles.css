@@ -160,6 +160,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .stacks ul li{
@@ -169,6 +170,7 @@ body{
     margin: 10px;
     padding: 10px;
     list-style: none;
+    flex: 1 1 75%;
 }
 
 .stacks ul li img {
