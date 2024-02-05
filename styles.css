@@ -337,6 +337,10 @@ body{
     background: var(--color-white);
 }
 
+.box-about{
+    display: flex;
+}
+
 .box-about h3{
     margin: 3rem;
     font-size: 2rem;  
@@ -368,20 +372,17 @@ body{
 }
 
 .button-cta{
-    display: flex;
-
-    max-width: 190px;
-    margin: 4rem 3rem;
+    display: inline-block;
+    max-width: 160px;
+    margin: 2rem 2rem;
 }
 
 .button-cta a{
-    display: inline-block;
-    width: 100%;
-    max-width: 172px;
+    max-width: 160px;
     font-size: 1.4rem;
 
     padding: 10px;
-    margin-bottom: 3rem;
+    margin-right: 10px;
     color: var(--color-black);
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
